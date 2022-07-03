@@ -39,7 +39,6 @@ html, body {
   margin-top: 3%;
 }
 .detail .info{
-  max-width: 50%;
   margin-left: 3rem;
 }
 .detail img{
@@ -52,10 +51,19 @@ html, body {
 .info h1{
   margin: 1.5rem 0;
 }
-.info h4{
+.info h3{
   margin-bottom: 1.5rem;
 }
 .info .desc{
   font-size: 1.5rem;
   margin: 3rem 0;
+}
+.info p, li{
+  font-size: 1.5rem;
+}
+.showtimes {
+  font-size: 1.5rem;
+}
+.showtimes th{
+  white-space: pre;
 }
