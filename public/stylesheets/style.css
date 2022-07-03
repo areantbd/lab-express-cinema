@@ -5,6 +5,15 @@ html, body {
   font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body a{
+  font-size: 1.5rem;
+}
+
 .background{
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
@@ -28,4 +37,25 @@ html, body {
   font-size: 3rem;
   border-radius: 50px;
   margin-top: 3%;
+}
+.detail .info{
+  max-width: 50%;
+  margin-left: 3rem;
+}
+.detail img{
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+}
+.info a {
+  font-size: 2rem;
+}
+.info h1{
+  margin: 1.5rem 0;
+}
+.info h4{
+  margin-bottom: 1.5rem;
+}
+.info .desc{
+  font-size: 1.5rem;
+  margin: 3rem 0;
 }

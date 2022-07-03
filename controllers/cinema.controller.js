@@ -10,3 +10,11 @@ module.exports.movies = (req, res, next) => {
       res.render("movies", { movies });
     });
   };
+
+  module.exports.detail = (req, res, next) => {
+    Cinema.findById(req.params.id).then((movie) => {
+      /* return res.json(movie) */
+      res.render("detail", { movie });
+    });
+  };
+  

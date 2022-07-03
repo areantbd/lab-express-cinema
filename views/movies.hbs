@@ -1,9 +1,15 @@
-{{#each movies as |movie|}}
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+<div class="row">
+  {{#each movies as |movie|}}
+    <div class="col-3">
+      <div class="card mb-4">
+        <div class="card" {{! style="width: 18rem;" }}>
+          <img src="{{movie.image}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"><b>{{movie.title}}</b></h5>
+            <a href="movie/{{_id}}" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
 </div>
-{{/each}}
